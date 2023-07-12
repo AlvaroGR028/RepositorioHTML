@@ -5,6 +5,7 @@ body {
     background-color: #f9fcfd;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
