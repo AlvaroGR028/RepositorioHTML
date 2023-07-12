@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,34 @@
     <title>Template - Utilizar como modelo</title>
     <link rel="stylesheet" href="base.css">
 </head>
+
 <body>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+      
+        th, td {
+          border: 1px solid black;
+          padding: 5px;
+        }
+      
+        th {
+          background-color: blue;
+          color: white;
+        }
+      
+        tbody tr:nth-child(even) {
+          background-color: lightgray;
+        }
+      
+        tbody tr:nth-child(odd) {
+          background-color: white;
+        }
+    
+      </style>
+
     <div class="wrapper">
         <div class="menu">
             <!-- Aqui vai o seu menu -->
@@ -21,16 +49,126 @@
 
         <div class="main">
             <div class="header">
-                <img src="src/img/hora.png" >
+                <img src="src/img/hora.png">
             </div>
-    
+
             <div class="content">
-                Content
                 <!-- Aqui vai o seu conteúdo -->
+                <table style="margin-bottom: 20px;">
+                    <tr>
+                        <th colspan="4">Horários</th>
+                    </tr>
+                    <tr>
+                        <th width="45%">Serviços</th>
+                        <th width="20%">Segunda a Sexta</th>
+                        <th width="15%">Sábados</th>
+                        <th width="25%">Domingo e Feriados</th>
+                    </tr>
+                    <tr>
+                        <td>Avaliação Nutricional Completa</td>
+                        <td>08h - 18h</td>
+                        <td>09h - 14h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Planejamento de Dieta Personalizada</td>
+                        <td>08h - 18h</td>
+                        <td>09h - 14h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Acompanhamento Nutricional</td>
+                        <td>08h - 18h</td>
+                        <td>09h - 14h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Educação Alimentar</td>
+                        <td>08h - 18h</td>
+                        <td>09h - 14h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Programa de Emagrecimento</td>
+                        <td>08h - 18h</td>
+                        <td>09h - 14h</td>
+                        <td> - </td>
+                    </tr>
+                </table>
+
+                <table style="width: 90%">
+                    <tr>
+                        <th style="width: 90%">Serviço</th>
+                        <th style="width: 10%">Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Avaliação Nutricional Completa </td>
+                        <td rowspan="2"> R$ 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Nesse serviço, realizamos uma avaliação detalhada do estado nutricional do paciente,
+                            considerando seus hábitos alimentares, histórico de saúde e metas específicas. Com base
+                            nessa avaliação, elaboramos um plano nutricional personalizado.</td>
+                    </tr>
+                    <tr>
+                        <td>Planejamento de Dieta Personalizada </td>
+                        <td rowspan="2"> R$ 250,00</td>
+                    </tr>
+                    <tr>
+                        <td> Desenvolvemos um plano de dieta específico para atender às necessidades do paciente,
+                            levando em consideração suas preferências alimentares, restrições dietéticas e objetivos de
+                            saúde. O plano inclui orientações sobre porções adequadas, seleção de alimentos saudáveis e
+                            estratégias para alcançar os resultados desejados.</td>
+                    </tr>
+                    <tr>
+                        <td>Acompanhamento Nutricional (sessão)</td>
+                        <td rowspan="2"> R$ 150,00 </td>
+                    </tr>
+                    <tr>
+                        <td> Esse serviço consiste em consultas de acompanhamento regular, nas quais revisamos o
+                            progresso do paciente, ajustamos o plano alimentar conforme necessário, oferecemos suporte e
+                            motivação contínuos e esclarecemos dúvidas. O acompanhamento nutricional é fundamental para
+                            garantir resultados a longo prazo e adaptar o plano às mudanças nas necessidades do
+                            paciente.
+
+                            (pacote de acompanhamento mensal com 4 sessões: R$ 500,00)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Educação Alimentar (sessão)</td>
+                        <td rowspan="2"> R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Oferecemos sessões de educação alimentar, nas quais abordamos tópicos relacionados à
+                            alimentação saudável, leitura de rótulos, estratégias para superar dificuldades na adesão à
+                            dieta, compras conscientes e dicas práticas para uma vida saudável. Essas sessões visam
+                            fornecer conhecimentos e habilidades necessários para fazer escolhas alimentares adequadas
+                            no dia a dia.</td>
+                    </tr>
+                    <tr>
+                        <td>Programa de Emagrecimento (mês)</td>
+                        <td rowspan="2"> R$ 300,00</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvemos um programa de emagrecimento personalizado, com base nas necessidades e metas
+                            individuais do paciente. Por meio de orientação alimentar adequada, estratégias
+                            comportamentais e suporte contínuo, auxiliamos no processo de perda de peso de forma
+                            saudável e sustentável.
+                            (inclui avaliação inicial, planejamento de dieta, acompanhamento mensal e suporte por
+                            telefone/e-mail)
+                        </td>
+                    </tr>
+
+                </table>
+
+
+
+
+
             </div>
-    
+
             <div class="footer">
-                
+
                 <!-- Aqui vai o seu rodapé -->
                 <p>
                     Endereço:
@@ -47,4 +185,25 @@
         </div>
     </div>
 </body>
+
 </html>
+
+<!-- Avaliação Nutricional Completa:
+Descrição: Nesse serviço, realizamos uma avaliação detalhada do estado nutricional do paciente, considerando seus hábitos alimentares, histórico de saúde e metas específicas. Com base nessa avaliação, elaboramos um plano nutricional personalizado.
+Preço médio: R$ 200,00
+
+Planejamento de Dieta Personalizada:
+Descrição: Desenvolvemos um plano de dieta específico para atender às necessidades do paciente, levando em consideração suas preferências alimentares, restrições dietéticas e objetivos de saúde. O plano inclui orientações sobre porções adequadas, seleção de alimentos saudáveis e estratégias para alcançar os resultados desejados.
+Preço médio: R$ 250,00
+
+Acompanhamento Nutricional:
+Descrição: Esse serviço consiste em consultas de acompanhamento regular, nas quais revisamos o progresso do paciente, ajustamos o plano alimentar conforme necessário, oferecemos suporte e motivação contínuos e esclarecemos dúvidas. O acompanhamento nutricional é fundamental para garantir resultados a longo prazo e adaptar o plano às mudanças nas necessidades do paciente.
+Preço médio: R$ 150,00 por sessão (pacote de acompanhamento mensal com 4 sessões: R$ 500,00)
+
+Educação Alimentar:
+Descrição: Oferecemos sessões de educação alimentar, nas quais abordamos tópicos relacionados à alimentação saudável, leitura de rótulos, estratégias para superar dificuldades na adesão à dieta, compras conscientes e dicas práticas para uma vida saudável. Essas sessões visam fornecer conhecimentos e habilidades necessários para fazer escolhas alimentares adequadas no dia a dia.
+Preço médio: R$ 150,00 por sessão
+
+Programa de Emagrecimento:
+Descrição: Desenvolvemos um programa de emagrecimento personalizado, com base nas necessidades e metas individuais do paciente. Por meio de orientação alimentar adequada, estratégias comportamentais e suporte contínuo, auxiliamos no processo de perda de peso de forma saudável e sustentável.
+Preço médio: R$ 300,00 por mês (inclui avaliação inicial, planejamento de dieta, acompanhamento mensal e suporte por telefone/e-mail) -->
