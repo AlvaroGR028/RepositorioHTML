@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,78 @@
     <link rel="stylesheet" href="base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <style>
+        .section {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 3em;
+            justify-content: space-between;
+        }
+        iframe{
+            margin-left: 4em;
+        }
+        form {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            flex: 1;
+            padding: 0.2em;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .reset-button {
+            background-color: #f44336;
+            color: white;
+            margin-left: 5px;
+        }
+    </style>
     <div class="wrapper">
         <div class="menu">
             <!-- Aqui vai o seu menu -->
@@ -22,50 +94,72 @@
 
         <div class="main">
             <div class="header">
-                <img src="src/img/contato.png" >
+                <img src="src/img/contato.png">
             </div>
-    
+
             <div class="content">
-            <!-- Aqui vai o seu conteúdo -->
+                <!-- Aqui vai o seu conteúdo -->
 
-            <!-- Os telefones de contato (celular e whatsapp)
-Endereço completo da clínica
-Um Iframe com o Google Maps apontando o endereço da clínica
-Um formulário de contato com:
-Nome (type="text")
-E-mail (type="email")
-Assunto (type="text")
-Mensagem (textarea)
-Botões de envias e limpar formulário -->
-<h2>Contatos</h2>
-<p> 
-    Call Center: (99) 3333-3333| 9999-9999
-    E-mail: falecom@clinicahtml.com.br
-</p>
-<h2>Endereço</h2>
-<p>
-    Loja Ficticia, Piso 3 bloco 1
-    Avenida dos Andradas, 3000 - Santa Efigênia | Belo Horizonte MG | CEP: 30260-070
-</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5954.463499572526!2d-43.92748581967828!3d-19.92117379067779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69983f4a0d60f%3A0x9d2ceaa9db57f6ea!2sBoulevard%20Shopping%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1689181647927!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Contatos</h2>
+                <p>
+                    Call Center: (99) 3333-3333| 9999-9999
+                    E-mail: falecom@clinicahtml.com.br
+                </p>
+                <h2>Endereço</h2>
+                <p>
+                    Loja Ficticia, Piso 3 bloco 1
+                    Avenida dos Andradas, 3000 - Santa Efigênia | Belo Horizonte MG | CEP: 30260-070
+                </p>
+
+                <div class="section">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5954.463499572526!2d-43.92748581967828!3d-19.92117379067779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69983f4a0d60f%3A0x9d2ceaa9db57f6ea!2sBoulevard%20Shopping%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1689181647927!5m2!1spt-BR!2sbr"
+                        width="500" height="400" style="border:1;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
+
+                    <form name="signup" onsubmit="alert('Enviei o formulário')" target="_blank" method="post"
+                        action="#">
+
+                        <legend>Entre em contato conosco:</legend>
+
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" /><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" /><br>
+
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" /><br>
+
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message"></textarea><br>
+
+                        <div class="button-container">
+
+                            <button type="submit" class="submit-button">Enviar</button>
+                            <button type="reset" class="reset-button">Limpar </button>
+                        </div>
+                    </form>
+                </div>
 
             </div>
-    
+
             <div class="footer">
-                
+
                 <!-- Aqui vai o seu rodapé -->
-              
-                <p> 
+
+                <p>
                     Call Center: (99) 3333-3333| 9999-9999
                     E-mail: falecom@clinicahtml.com.br
                 </p>
                 <p>
-                    Direitos Reservados 2023 | Desenvolvido por Alvaro
+                    Direitos Reservados 2023 | Desenvolvido por Alvaro Goncalves Rodrigues
                 </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
