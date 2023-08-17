@@ -12,13 +12,38 @@
 <body>
 
     <header>
-        <figure class="logo">
-            <img src="assets/images/wiki.png" width="50" alt="Logo Wikipedia">
-            <img src="assets/images/wikiTexto.png" width="120" alt="Logo Wikipedia">
-            <!--<figcaption></figcaption>-->
-        </figure>
-    </header>
+        <div class="box">
+            <div class="dropdown">
+                <div class="barMenu"></div>
+                <div class="barMenu"></div>
+                <div class="barMenu"></div>
+            </div>
 
+            <figure class="logo">
+                <img src="assets/images/wiki.png" width="50" alt="Logo Wikipedia">
+                <img src="assets/images/wikiTexto.png" width="120" alt="Logo Wikipedia">
+            </figure>
+
+            <form action="/resultado-da-pesquisa" method="get">
+                <input type="text" id="pesquisa" name="q" placeholder="Pesquisar na Wikipedia" />
+                <input type="submit" value="Pesquisar" disabled />
+            </form>
+        </div>
+        <div class="usuario">
+
+            <div class="login">
+                <a href="">Criar uma conta</a>
+                <a href="">Entrar</a>
+            </div>
+
+            <div class="dropdown">
+                <div class="dotMenu"></div>
+                <div class="dotMenu"></div>
+                <div class="dotMenu"></div>
+            </div>
+
+        </div>
+    </header>
 
     <div class="bar"></div>
 
@@ -35,7 +60,7 @@
 
         <main>
 
-            <h1 id="inicioToefl" >Teste de Inglês como uma Língua Estrangeira </h1>
+            <h1 id="inicioToefl">Teste de Inglês como uma Língua Estrangeira </h1>
             <hr>
 
             <p>
@@ -63,9 +88,7 @@
                 Test.
             </p>
 
-            <h2 id="testeToefl">
-                Teste baseado na <i>Internet</i>
-            </h2>
+            <h2 id="testeToefl"> Teste baseado na <i>Internet</i></h2>
             <hr>
 
             <p>
@@ -82,7 +105,7 @@
                 focando a linguagem usada no ambiente acadêmico. É permitido tomar notas durante o exame.
             </p>
 
-            <h2 id="secoesToefl" >Seções</h2>
+            <h2 id="secoesToefl">Seções</h2>
             <hr>
 
             <p>
@@ -115,7 +138,7 @@
                 pessoal.
             </p>
 
-            <h2 id="etsToefl" >ETS</h2>
+            <h2 id="etsToefl">ETS</h2>
             <hr>
 
             <p>
@@ -139,13 +162,14 @@
                 <li><a href=""><s>Michigan ECCE e ECPE</s></a></li>
             </ul>
 
-            <h2 id="referenciasToefl" >Referências</h2>
+            <h2 id="referenciasToefl">Referências</h2>
             <hr>
             <p>[...]</p>
 
-            <h2 id="ligacoesToefl" >Ligações Externas</h2>
+            <h2 id="ligacoesToefl">Ligações Externas</h2>
             <hr>
             <p>[...]</p>
+
         </main>
 
         <aside>
@@ -165,7 +189,7 @@
 
     <footer>
         <p>
-            Esta página foi editada pela última vez às 16h18min de 17 de agosto de 2023.</p>
+            Esta página foi editada pela última vez às 14h06min de 17 de agosto de 2023.</p>
         <p>
             O conteúdo apresentado está contemplado na página <a
                 href="https://pt.wikipedia.org/wiki/Teste_de_Inglês_como_uma_Língua_Estrangeira"> Test of English as a
@@ -174,10 +198,10 @@
                 href="https://www.dio.me"> DIO.me. </a>
         </p>
         <p>
-            <s><a href=""> Política de privacidade Sobre a
-                Page Avisos gerais Código de conduta Versão
-                móvel Programadores Estatísticas Declaração sobre ''cookies''
-            </a></s>
+            <s><a href="">
+                    Política de privacidade Sobre a Page Avisos gerais Código de conduta Versão móvel Programadores
+                    Estatísticas Declaração sobre ''cookies''
+                </a></s>
         </p>
 
 
@@ -186,5 +210,3 @@
 </body>
 
 </html>
-
-

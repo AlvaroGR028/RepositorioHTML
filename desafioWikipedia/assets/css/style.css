@@ -9,6 +9,88 @@ h1, h2 {
     margin: 0;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .barMenu {
+    width: 20px;
+    height: 3px;
+    background-color: #333; /* Cor preta */
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+.usuario{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 6px;
+}
+
+   .dotMenu {
+    width: 6px;
+    height: 6px;
+    background-color: #333; /* Cor dos pontinhos */
+    border-radius: 50%;
+    margin: 6px 0; /* Espaçamento entre os pontos */
+    display: inline-block;
+  }
+
+form {
+    text-align: center;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 22rem;
+    padding: 0.5rem 0 0.5rem 40px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-right: 0;
+    border-radius: 2px;
+
+    background-image: url('../images/lupa.png');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 20px 20px;
+
+}
+
+input[type="submit"] {
+    padding: 0.5rem 0.5rem;
+    background-color: #F8F9FA;
+    border: 1px solid #ccc;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
 /* bara superior */
 .bar {
     padding: 15px;
@@ -22,7 +104,7 @@ nav {
     border-right: solid 1px #cdcdcd;
 }
 
-nav hr{
+nav hr {
     margin-right: 1rem;
 }
 
@@ -55,15 +137,15 @@ ul li {
     margin-left: 1rem;
 }
 
-aside ul{
-  list-style-type: none;
+aside ul {
+    list-style-type: none;
 }
 
 nav ul {
     list-style-type: none;
-  }
+}
 
-  /* Links */
+/* Links */
 a {
     color: blue;
     text-decoration: none;
@@ -73,6 +155,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: purple; 
+    text-decoration: underline; 
+  }
 
 footer {
     min-height: 100px;
