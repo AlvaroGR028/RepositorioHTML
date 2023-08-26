@@ -1,19 +1,19 @@
-# RepositorioHTML
-Repositório feito para o curso "Formação HTML Web Developer" da DIO.me contendo os desafios solicitados para a finalização da formação. 
+# Repositorio HTML
+Este repositório foi criado como parte da "Formação HTML Web Developer" oferecida pela DIO.me, contendo uma coleção de projetos e desafios desenvolvidos durante o curso. Cada projeto reflete a aplicação prática das técnicas e conceitos aprendidos ao longo da formação
 
-Contéudo:
+Conteúdo: 
 - Front-End
 - Básico
 
 1° Site solicitado no formação: https://alvarogr028.github.io/RepositorioHTML/desafioTags/
 
-Descrição: Elabore um Website com uma estrutura básica, utilizando as tags aprendidas durante as aulas práticas assistidas durante os cursos.
+Descrição: Este projeto consiste na criação de um website com uma estrutura básica, utilizando as tags HTML aprendidas durante as aulas práticas do curso. É uma oportunidade para praticar os fundamentos essenciais do desenvolvimento web.
 
 2° Site solicitado no formação: https://alvarogr028.github.io/RepositorioHTML/desafio2/
 
-Descrição: Desenvolva um site de uma clínica médica, onde você será responsável pela especialidade apresentada. Utilize todo conteúdo abordado no módulo para a implementação de elementos fundamentais de uma página.
+Descrição: Neste projeto, você será desafiado a criar um site para uma clínica médica, assumindo a responsabilidade pela especialidade apresentada. Utilize todo o conhecimento adquirido no módulo para implementar elementos fundamentais de uma página web, aprimorando suas habilidades de design e layout.
 
 3° Site solicitado na formação: https://alvarogr028.github.io/RepositorioHTML/desafioWikipedia/
 
-Descrição: Este desafio consiste em treinar a relação da estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+Descrição: Este desafio tem como objetivo aprimorar sua capacidade de estruturar um site de forma eficiente, aplicando conhecimentos sobre semântica e acessibilidade. Treine a organização de conteúdo e a criação de uma experiência de usuário agradável em seu site temático, inspirado na Wikipedia.
 
